@@ -12,29 +12,10 @@
 
 <body>
     <div id="app">
-        <p>{{a}}</p>
-        <p>{{person.name}}</p>
+        <h1>我是第九个HTML文件</h1>
+
     </div>
     <script>
-        let vm = new Vue({
-            el: '#app',
-            data: {
-                a: 111,
-                b: 123,
-                person: {
-                    name: 'zhangsan',
-                    age: 18
-                }
-            },
-        })
-        vm.$watch('person', function() {
-            alert(this.person.name + "发生了变化");
-        }, {
-            deep: true
-        })
-        document.onclick = function() {
-            vm.person.name = '张三';
-        }
     </script>
 </body>
 
